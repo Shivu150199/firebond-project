@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebond project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   
+  <div class="inputone">
+    <label for="input1">Input 1:
+    <input type="text" placeholder="my arg" value="my arg"/>
+    </label>
+    <input type="radio" name="input1" value="true" checked />True
+    <input type="radio" name="input1" value="false" />False
+    </div>
+    <br />
+   <div class="inputtwo">
+    <label for="input2">Input 2:
+     <input type="text"  value="X" class="x"/>
+    </label>
+    <input type="radio" name="input2" value="true" checked />True
+    <input type="radio" name="input2" value="false" />False
+       </div>
+<button type=button class="inputAdding" onclick="addInp()">+add</button>
+  
+    <br />
+    
+    <select id="operator">
+      <option value="">...select</option>
+      <option value="constant">constant</option>
+      <option value="argument">argument</option>
+      <option value="&&">AND</option>
+      <option value="||">OR</option>
+    </select>
+<button onClick="reset()">X</button>
+  <div class="container"></div>
+    <br />
+    <button onclick="checkResult()">Check Result</button>
+    <br />
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
